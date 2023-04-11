@@ -1,3 +1,199 @@
-h1 {
-    color: pink;
+:root {
+    --color-primary: #fa8a74;
+    --color-primary-light: #fcd5ce;
+    --color-secondary: #fec89a;
+    --color-secondary-light: #f9dcc4;
+    --color-light: #f8edeb;
+    --font-primary: 'Nunito', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 700;
+    padding: 0 15rem;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__link {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}
+
+.navbar__item:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.header {
+    height: 90vh;
+    display: flex;
+    padding: 0 15rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__img {
+    width: 35rem;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin-left: 10rem;
+}
+
+.header__title {
+    font-size: 8rem;
+    text-transform: capitalize;
+}
+
+.header__h2 {
+    font-size: 6rem;
+}
+
+.header__span {
+    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-me {
+    font-size: 2rem;
+    padding: 0 15rem;
+    line-height: 1.7;
+    margin-bottom: 10rem;
+}
+
+.h2-heading {
+    font-size: 5rem;
+    text-transform: capitalize;
+    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.work {
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.work__title {
+    align-self: end;
+    margin-bottom: 5rem;
+}
+
+.work__cards-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 5rem;
+    justify-items: center;
+}
+
+.work__card {
+    width: 100%;
+    height: 40rem;
+    border: 5px solid var(--color-primary);
+    box-shadow: .5rem .5rem 1rem #939393;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.work__card:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.work__text {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-transform: capitalize;
+    width: 30%;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+}
+
+.text__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.work__card--1 {
+    grid-column: 1/3;
+    background-image: url("img/photo-1.jpg");
+    background-size: contain;
+}
+
+.work__card--2 {
+    background-image: url("img/photo-2.jpg");
+}
+
+.work__card--3 {
+    background-image: url("img/photo-3.jpg");
+}
+
+.work__card--4 {
+    background-image: url("img/photo-4.jpg");
+}
+
+.work__card--5 {
+    background-image: url("img/photo-5.jpg");
+}
+
+.contact {
+    margin: 10rem 0;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact__list {
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.contact__item:not(:last-child) {
+    margin-right: 10rem;
+}
+
+.contact__link:link,
+.contact__link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.contact__link:hover {
+    text-decoration: underline;
 }
