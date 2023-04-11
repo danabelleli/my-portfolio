@@ -6,61 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a href="#">about me</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">contact</a></li>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#about-me" class="navbar__link">about me</a></li>
+                <li class="navbar__item"><a href="#work" class="navbar__link">work</a></li>
+                <li class="navbar__item"><a href="#contact" class="navbar__link">contact</a></li>
             </ul>
         </nav>
         <section class="header">
-            <img src="img/woman.svg" alt="my icon profile">
-            <h1>hello, i'm dana</h1>
-            <h2>a full stack <span>web developer</span></h2>
+            <div class="header__text">
+                <h1 class="header__title">hello, i'm dana</h1>
+                <h2 class="header__h2">a full stack <span class="header__span">web developer</span></h2>
+            </div>
+            <img src="img/woman-icon.jpg" alt="my icon profile" class="header__img">
         </section>
     </header>
     <main>
-        <section class="about-me">
-            <h2 class="about-me__title">about me</h2>
+        <section id="about-me" class="about-me">
+            <h2 class="h2-heading">about me</h2>
             <p class="about-me__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim amet iure
                 tempora velit cumque animi ullam similique ut culpa, nemo dignissimos perferendis praesentium eius nisi
-                sed, eos veritatis facilis.</p>
+                sed, eos veritatis facilis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ex.
+                Similique eaque aspernatur commodi in aperiam vel amet a repudiandae quod! Veritatis quo cumque iure
+                quae magni maiores nemo dolore.</p>
         </section>
-        <section class="work">
-            <div class="work__card">
-                <h3 class="work__title">surf report</h3>
-                <p class="work__par">mern stack</p>
-            </div>
-            <div class="work__card">
-                <h3 class="work__title">led wall</h3>
-                <p class="work__par">node/lo T</p>
-            </div>
-            <div class="work__card">
-                <h3 class="work__title">calculator</h3>
-                <p class="work__par">react/ javascript/ css</p>
-            </div>
-            <div class="work__card">
-                <h3 class="work__title">puzzle</h3>
-                <p class="work__par">mern stack</p>
-            </div>
-            <div class="work__card">
-                <h3 class="work__title">rub buddy</h3>
-                <p class="work__par">html/ css</p>
+        <section id="work" class="work">
+            <h2 class="h2-heading work__title">work</h2>
+            <div class="work__cards-box">
+                <div class="work__card work__card--1">
+                    <div class="work__text">
+                        <h3 class="text__title">surf report</h3>
+                        <p class="work__par">mern stack</p>
+                    </div>
+                </div>
+                <div class="work__card work__card--2">
+                    <div class="work__text">
+                        <h3 class="text__title">led wall</h3>
+                        <p class="work__par">node/lo T</p>
+                    </div>
+                </div>
+                <div class="work__card work__card--3">
+                    <div class="work__text">
+                        <h3 class="text__title">calculator</h3>
+                        <p class="work__par">react/ javaScript/ css</p>
+                    </div>
+                </div>
+                <div class="work__card work__card--4">
+                    <div class="work__text">
+                        <h3 class="text__title">puzzle</h3>
+                        <p class="work__par">mern stack</p>
+                    </div>
+                </div>
+                <div class="work__card work__card--5">
+                    <div class="work__text">
+                        <h3 class="text__title">rub buddy</h3>
+                        <p class="work__par">html/ css</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <section class="contact">
-            <h2 class="contact__title">contact</h2>
+        <section id="contact" class="contact">
+            <h2 class="contact__title h2-heading">contact</h2>
             <ul class="contact__list">
-                <li class="contact__item"><a href="#" class="contact__link">555-555-555</a></li>
-                <li class="contact__item"><a href="#" class="contact__link">danaportfolio.com</a></li>
-                <li class="contact__item"><a href="#" class="contact__link">dana@gmail.com</a></li>
+                <li class="contact__item"><a href="https://www.google.com/" class="contact__link">555-555-555</a></li>
+                <li class="contact__item"><a href="https://www.google.com/" class="contact__link">danaportfolio.com</a>
+                </li>
+                <li class="contact__item"><a href="https://www.google.com/" class="contact__link">dana@gmail.com</a>
+                </li>
             </ul>
         </section>
     </footer>
