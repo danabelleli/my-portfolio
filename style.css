@@ -197,3 +197,119 @@ body {
 .contact__link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1320px) {
+    .header__title {
+        font-size: 6rem;
+    }
+
+    .header__h2 {
+        font-size: 4rem;
+    }
+
+    .work__text {
+        width: 50%;
+    }
+
+    .contact__list {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .header__img {
+        margin-left: 0;
+    }
+
+    .work__text {
+        width: 50%;
+    }
+
+    .contact__list {
+        font-size: 2rem;
+    }
+
+    .contact__item:not(:last-child) {
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .header__img {
+        display: none;
+    }
+
+    .contact__list {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .contact__item:not(:last-child) {
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__img {
+        display: none;
+    }
+
+    .contact__list {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .contact__item:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    .work__cards-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 0 5rem;
+    }
+
+    .navbar {
+        padding: 0 5rem;
+    }
+
+    .about-me {
+        padding: 0 5rem;
+    }
+
+    .work {
+        padding: 0 5rem;
+    }
+
+    .contact {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .navbar__link {
+        font-size: 2rem;
+    }
+
+    .work__cards-box {
+        grid-row-gap: 2rem;
+
+    }
+
+    .contact__list {
+        list-style: none;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
